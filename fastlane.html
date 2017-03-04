@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <script src="p5.js"></script>
+
+</head>
+
+<body>
+    <script>
+        function setup() {
+            createCanvas(300, 300);
+        }
+
+        function draw() {
+            c = color(20, 75, 200); // Define color 'c'
+            fill(c); // Use color variable 'c' as fill color
+            rect(15, 20, 35, 60); // Draw left rectangle
+
+            greenValue = green(c); // Get green in 'c'
+            print(greenValue); // Print "75.0"
+            fill(0, greenValue, 0); // Use 'greenValue' in new fill
+            rect(50, 20, 35, 60); // Draw right rectangle
+        }
+    </script>
+
+
+
+</body>
+
+</html>
